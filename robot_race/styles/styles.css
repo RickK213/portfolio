@@ -1,0 +1,205 @@
+body {
+    padding-top: 40px;
+}
+h1, h2, h3 {
+    font-family: 'Audiowide', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #337ab7;
+}
+.dieRoll {
+    display: inline-block;
+    line-height: 32px;
+    padding: 0;
+    margin: 0 15px 0 0;
+    vertical-align: top;
+    font-weight: bold;
+}
+.playerName {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#playButton {
+    margin-top: 20px;
+}
+#gameBoard {
+    display: none;
+}
+.die-container {
+    display: inline-block;
+}
+.die {
+    background-image: url("../images/diceSprite.png");
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.die.die-4 {
+    background-position: 0 0;
+}
+.die.die-6 {
+    background-position: -50px 0;
+}
+.die.die-8 {
+    background-position: -100px 0;
+}
+.die.die-10 {
+    background-position: -150px 0;
+}
+.die.die-12 {
+    background-position: -200px 0;
+}
+.die.die-20 {
+    background-position: -250px 0;
+}
+.die-small {
+    background-image: url("../images/diceSprite-small.png");
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.die-small.die-4 {
+    background-position: 0 0;
+}
+.die-small.die-6 {
+    background-position: -32px 0;
+}
+.die-small.die-8 {
+    background-position: -64px 0;
+}
+.die-small.die-10 {
+    background-position: -96px 0;
+}
+.die-small.die-12 {
+    background-position: -128px 0;
+}
+.die-small.die-20 {
+    background-position: -160px 0;
+}
+.robot {
+    width: 256px;
+    height: 256px;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+}
+#player1Robot {
+    background-image: url("../images/robot1-start.png");
+}
+#player2Robot {
+    background-image: url("../images/robot2-start.png");
+}
+.robotPiece {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+}
+#robot1Piece1 {
+    background-image: url("../images/robot1-piece1.png");
+}
+#robot1Piece2 {
+    background-image: url("../images/robot1-piece2.png");
+}
+#robot1Piece3 {
+    background-image: url("../images/robot1-piece3.png");
+}
+#robot1Piece4 {
+    background-image: url("../images/robot1-piece4.png");
+}
+#robot1Piece5 {
+    background-image: url("../images/robot1-piece5.png");
+}
+#robot1Piece6 {
+    background-image: url("../images/robot1-piece6.png");
+}
+
+#robot2Piece1 {
+    background-image: url("../images/robot2-piece1.png");
+}
+#robot2Piece2 {
+    background-image: url("../images/robot2-piece2.png");
+}
+#robot2Piece3 {
+    background-image: url("../images/robot2-piece3.png");
+}
+#robot2Piece4 {
+    background-image: url("../images/robot2-piece4.png");
+}
+#robot2Piece5 {
+    background-image: url("../images/robot2-piece5.png");
+}
+#robot2Piece6 {
+    background-image: url("../images/robot2-piece6.png");
+}
+.pieceNumbersContainer {
+    width: 256px;
+    height: 256px;
+    position: relative;
+}
+.pieceNumber {
+    position: absolute;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+}
+.piece1 {
+    left: 112px;
+    top: 18px;
+}
+.piece2 {
+    left: 112px;
+    top: 90px;
+}
+.piece3 {
+    left: 60px;
+    top: 115px;
+}
+.piece4 {
+    left: 170px;
+    top: 115px;
+}
+.piece5 {
+    left: 85px;
+    top: 205px;
+}
+.piece6 {
+    left: 140px;
+    top: 205px;
+}
+#player2Robot .piece1 {
+    left: 132px;
+    top: 25px;
+}
+#player2Robot .piece2 {
+    left: 132px;
+    top: 90px;
+}
+#player2Robot .piece3 {
+    left: 60px;
+    top: 120px;
+}
+#player2Robot .piece4 {
+    left: 185px;
+    top: 120px;
+}
+#player2Robot .piece5 {
+    left: 107px;
+    top: 205px;
+}
+#player2Robot .piece6 {
+    left: 155px;
+    top: 205px;
+}
+.diceSelector, .diceInHand {
+    height: 90px;
+}
+@media (min-width: 992px) {
+    .diceSelector, .diceInHand {
+        height: 140px;
+    }
+}
